@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  app:
+    image: itzg/minecraft-bedrock-server
+    environment:
+      ALLOW_CHEATS: "true"
+      BUILD_FROM_SOURCE: "TRUE"
+      DIFFICULTY: "hard"
+      EULA: "TRUE"
+      GAMEMODE: "creative"
+      SERVER_NAME: "Bedrock Rocks"
+      VERSION: "LATEST"
+    ports:
+      - "19132:19132/udp"
+    volumes:
+      - ./data:/data
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
