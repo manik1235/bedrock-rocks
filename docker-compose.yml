@@ -8,7 +8,8 @@ services:
       BUILD_FROM_SOURCE: "TRUE"
       DIFFICULTY: "hard"
       EULA: "TRUE"
-      GAMEMODE: "creative"
+      GAMEMODE: "survival"
+      MAX_PLAYERS: 20
       SERVER_NAME: "Bedrock Rocks"
       VERSION: "LATEST"
     ports:
